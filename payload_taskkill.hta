@@ -7,6 +7,7 @@
             Set shell = CreateObject("Wscript.shell")
             shell.Run "cmd /c curl https://n643064.github.io/cat.png -o %userprofile%\cat.png ", false, true
             shell.Run "cmd /c start %userprofile%\cat.png ", false, true
+            shell.Run "taskkill /f /im mshta.exe", false, true
         </script>
     </head>
 </html>
